@@ -12,7 +12,7 @@ const Home = () => {
   }, []);
   return (
     <div className={styles.homeContent}>
-      <h1>¡Hola, {name}!</h1>
+      <h1>¡Hola!</h1>
       <p>
         ¡Te damos la bienvenida a la <strong>expedición microscópica</strong>!
       </p>
