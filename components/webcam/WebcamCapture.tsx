@@ -36,7 +36,10 @@ const WebcamCapture = ({
         />
       )}
       <h1>¡Coincidí la imágen con la de abajo!</h1>
-      <p>Cuando estés conforme con la coincidencia, hacé click en "capturar"</p>
+      <p>
+        Cuando estés conforme con la coincidencia, hacé click en
+        &quot;capturar&quot;
+      </p>
       <Webcam
         audio={false}
         height={height}
