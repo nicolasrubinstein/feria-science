@@ -8,12 +8,12 @@ const Quiz = () => {
   const micNumber = Number(router.query.id);
 
   if (micNumber !== 1 && micNumber !== 2) {
-    return router.push("/404");
+    router.push("/404");
   }
 
   return (
     <div>
-      <WebcamCapture micNumber={micNumber} goalImg={exampleImage} />
+      <WebcamCapture micNumber={micNumber as 1 | 2} goalImg={exampleImage} />
     </div>
   );
 };
