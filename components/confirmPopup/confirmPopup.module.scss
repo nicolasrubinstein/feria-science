@@ -1,0 +1,44 @@
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  background: white;
+  width: 90vw;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 90vh;
+  overflow-y: scroll;
+}
+
+.buttons {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  max-width: 300px;
+}
+
+.images {
+  div {
+    margin-right: 30px;
+  }
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 700px) {
+    flex-direction: row;
+  }
+}

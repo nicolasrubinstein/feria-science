@@ -1,0 +1,13 @@
+.header {
+  width: 100vw;
+  background: var(--navy-blue);
+  height: 80px;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    font-weight: lighter;
+  }
+}
