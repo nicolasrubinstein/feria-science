@@ -10,7 +10,7 @@ export const width = 300;
 const videoConstraints = {
   width,
   height,
-  facingMode: { exact: "user" },
+  facingMode: "environment",
 };
 
 const WebcamCapture = ({

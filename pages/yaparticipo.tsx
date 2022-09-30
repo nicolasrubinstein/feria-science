@@ -9,6 +9,7 @@ const YaParticipo = () => {
     if (!localStorage.getItem("participated")) {
       router.push("/");
     }
+
     setName(localStorage.getItem("name") || "");
   }, []);
   return (

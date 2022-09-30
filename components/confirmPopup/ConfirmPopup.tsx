@@ -6,6 +6,7 @@ import { addImage } from "../../db";
 import { exampleImage } from "../../example";
 import { height, width } from "../webcam/WebcamCapture";
 import styles from "./confirmPopup.module.scss";
+import { BallTriangle } from "react-loader-spinner";
 
 const ConfirmPopup = ({
   imageSrc,
@@ -34,23 +35,23 @@ const ConfirmPopup = ({
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
-        {/* <div>
-          <button className={styles.close} onClick={onClose}>
-            Cerrar
-          </button>
-        </div> */}
         <h2>Estás a punto de enviar la siguiente comparación:</h2>
         <section className={styles.images}>
           <div>
-            <Image src={imageSrc} alt="Image" width={width} height={height} />
+            <img
+              className={styles.image}
+              src={imageSrc}
+              alt="Image"
+              width={width}
+            />
             <p>Tu foto</p>
           </div>
           <div>
-            <Image
+            <img
+              className={styles.image}
               src={exampleImage}
               alt="Image"
               width={width}
-              height={height}
             />
             <p>La foto que tenías que coincidir</p>
           </div>
@@ -58,7 +59,7 @@ const ConfirmPopup = ({
 
         <div className={styles.buttons}>
           <Button onClick={handleSubmit} color={"success"} variant="contained">
-            {isLoading ? "Enviando..." : "Enviar"}
+            {isLoading ? <BallTriangle height={30} width={30} /> : "Enviar"}
           </Button>
           <Button onClick={onClose} color="warning" variant="contained">
             Cancelar

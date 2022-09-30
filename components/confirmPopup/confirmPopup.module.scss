@@ -33,12 +33,14 @@
 }
 
 .images {
-  div {
-    margin-right: 30px;
-  }
   display: flex;
   flex-direction: column;
   @media (min-width: 700px) {
     flex-direction: row;
   }
+  align-items: center;
+}
+
+.image {
+  margin-right: 20px;
 }
