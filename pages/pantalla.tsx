@@ -39,7 +39,7 @@ const Pantalla = () => {
       </h1>
       <div className={styles.wrapper}>
         {images.map((image) => {
-          return <ImageComparison {...image} />;
+          return <ImageComparison {...image} key={Date.now()} />;
         })}
       </div>
     </div>
