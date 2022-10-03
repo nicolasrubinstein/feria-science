@@ -39,7 +39,9 @@ const Pantalla = () => {
       </h1>
       <div className={styles.wrapper}>
         {images.map((image) => {
-          return <ImageComparison {...image} key={Date.now()} />;
+          return (
+            <ImageComparison {...image} key={image.imgB64.substring(1, 18)} />
+          );
         })}
       </div>
     </div>
