@@ -15,7 +15,10 @@ const Quiz = () => {
 
   return (
     <div>
-      <WebcamCapture micNumber={micNumber as 1 | 2} goalImg={exampleImage} />
+      <WebcamCapture
+        micNumber={micNumber as 1 | 2}
+        goalImg={micNumber === 1 ? "/microscopio1.jpeg" : "/microscopio2.jpeg"}
+      />
     </div>
   );
 };
