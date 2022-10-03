@@ -49,7 +49,9 @@ const ConfirmPopup = ({
           <div>
             <img
               className={styles.image}
-              src={exampleImage}
+              src={
+                micNumber === 1 ? "/microscopio1.jpeg" : "/microscopio2.jpeg"
+              }
               alt="Image"
               width={width}
             />
